@@ -5,16 +5,29 @@
     <title></title>
   </head>
   <body>
-    <pre>
+
       <h1>liste des absents</h1>
-      <ul>
+    <table>
+      <thead>
+        <th>Id absence</th>
+        <th> Date</th>
+        <th> nom seance </th>
+      </thead>
+      <tbody>
+
+
          @foreach ($abs as $absence)
-         {{$absence->id}}
-          {{$absence->date}}
-          {{$absence->nom_seance}}
-      </ul>
+         <tr>
+
+      <td>  {{$absence->id}} </td>
+      <td>  {{$absence->date}} </td>
+      <td>  {{$absence->nom_seance}} </td>
+    </tr>
+
          @endforeach
-      <!-- {{print_r($abs)}} -->
-    </pre>
+       </tbody>
+
+       </table>
+
   </body>
 </html>
