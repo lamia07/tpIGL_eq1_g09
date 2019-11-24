@@ -18,7 +18,7 @@
 
          @foreach ($abs as $absence)
          <tr>
-
+ 
       <td>  {{$absence->id}} </td>
       <td>  {{$absence->date}} </td>
       <td>  {{$absence->nom_seance}} </td>
