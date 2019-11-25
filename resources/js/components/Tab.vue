@@ -3,18 +3,18 @@
 <v-card class="card" color="blue"
   >
     <v-card-title class="text">
-      Liste des Etudiants
+      Liste des Etudiants absents
       <v-spacer></v-spacer>
       <v-text-field
        class="text"
         v-model="search"
-        label="Search" 
+        label="Search"
         color="white"
         single-line
         hide-details
       ></v-text-field>
     </v-card-title>
-    <v-data-table 
+    <v-data-table
       :headers="headers"
       :items="Matricules"
       :search="search"

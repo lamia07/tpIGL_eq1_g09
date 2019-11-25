@@ -5,13 +5,13 @@
      <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
           <v-toolbar-title class="text">GeSco</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn icon href="#one" 
+          <v-btn icon href="#one"
           @click="method">
             <v-icon color="black">mdi-format-list-bulleted-square</v-icon>
           </v-btn>
-          
+
           <v-btn icon="user-circle"  href="#two" @click="method2">
-          
+
           </v-btn>
           <v-btn icon href="#three">
             <v-icon color="white" title="Déconnexion" >mdi-dots-vertical</v-icon>
@@ -23,14 +23,14 @@
     </template>
   </v-card>
   </div>
-  
+
   <div id="tabs" v-if="fs==='ok'">
   <tab/>
   </div>
   <div id="ajout" v-if="fc==='ok'">
   <ajout/>
   </div>
-  
+
 </div>
 </template>
 <script>
@@ -38,7 +38,7 @@ import tab from "./Tab.vue"
 import ajout from "./Ajout.vue"
 import user from "./UserCard.vue"
   export default {
-  
+
     components :{
       tab,
       ajout,
@@ -58,12 +58,12 @@ import user from "./UserCard.vue"
           fullName: 'Medjadji Chaima',
           title: 'Etudiant',
           description: `
-          mail : gc_medjadji@esi.dz 
-          Niveau :1cs 
+          mail : gc_medjadji@esi.dz
+          Niveau :1cs
           section : B
           Groupe : 9.`,
         }
-     
+
     }),
 
     methods: {
@@ -80,10 +80,15 @@ import user from "./UserCard.vue"
          else
          {this.fc = "false"}
        }
-    } 
-  } 
+    }
+  }
 </script>
 <style scoped>
+.group{
+    position: relative;
+    border : 5px;
+    border-color: white;
+}
 .text{
   color: white;
 }
@@ -107,4 +112,3 @@ import user from "./UserCard.vue"
   opacity: 0.9;
 }
 </style>
-
