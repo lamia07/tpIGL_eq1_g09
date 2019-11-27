@@ -15,6 +15,8 @@ class CreateSeancesTable extends Migration
     {
         Schema::create('seances', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->String('nom_module');
+            $table->integer('id_groupe');
         });
     }
 

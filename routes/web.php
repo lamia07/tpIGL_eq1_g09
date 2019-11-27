@@ -24,7 +24,7 @@ Route::post('/inscription', function () {
 });
 
 Route::post('/inscription', function () {
- 
+
 $Utilisateur = new App\Utilisateur;
 $Utilisateur->email = request('email');
 $Utilisateur->nom = request('nom');
@@ -39,3 +39,6 @@ $Utilisateur->save();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('{any}', function () {
+    return view('app');
+})->where('any', '.*');

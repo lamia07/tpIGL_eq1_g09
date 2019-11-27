@@ -15,6 +15,11 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->String('nom');
+            $table->String('email');
+            $table->String('mdp');
+            $table->integer('id_groupe');
+            $table->integer('id_absence');
         });
     }
 

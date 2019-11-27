@@ -15,4 +15,4 @@ export default new Vuex.Store({
     users
   },
   strict: debug
-})
+});

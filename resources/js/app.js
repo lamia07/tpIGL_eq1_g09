@@ -15,7 +15,9 @@ import * as mutations from './store/mutation-types'
 import { mapGetters } from 'vuex'
 import withSnackbar from './components/mixins/withSnackbar'
 import VueRouter from 'vue-router';
+import VueAxios from 'vue-axios';
 import axios from 'axios';
+
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
