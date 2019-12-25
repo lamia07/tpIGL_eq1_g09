@@ -16,12 +16,12 @@ class CreateEtudiantsTable extends Migration
         Schema::create('etudiants', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('nom');
+            $table->String('prenom');
+            $table->String('matricule');
             $table->String('email');
             $table->String('mdp');
-            $table->integer('id_groupe');
-            $table->integer('id_absence');
-            
-
+            $table->integer('id_groupe')->nullable();
+            $table->integer('id_absence')->nullable();
 
         });
     }

@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/inscription','EtudiantController@create');
+
+Route::post('/AjouterEtud', 'EtudiantController@AjouterEtud');
+
+Route::get('/AfficherAbs','AbsenceController@AfficherAbs');
