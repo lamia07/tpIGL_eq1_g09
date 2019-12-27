@@ -20,10 +20,10 @@ class EtudiantController extends Controller
       $etudiant->matricule =$request->input('matricule');
       $etudiant->email =$request->input('email');
       $etudiant->mdp=$request->input('nom') . $request->input('prenom');
-      $etudiant->id_groupe=\DB::table('groupes')->where('nom_groupe',$request->input('groupe'))->select('id')->get()->first()->id;
+      $etudiant->id_groupe=\DB::table('groupes')->where('nom_groupe',$request->input('nom_groupe'))->select('id')->get()->first()->id;
       $etudiant->save();
 
-      return 'inscription faite avec succes ';
+      // return response()->json(['etat' => true],'id' => $etudiant->id);
     }
     else {
       return 'ce etudiant est deja inscrit ';

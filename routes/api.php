@@ -18,6 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::get('/inscription','EtudiantController@create');
 
-Route::post('/AjouterEtud', 'EtudiantController@AjouterEtud');
+Route::post('/AjouterEtud', 'EtudiantController@AjouterEtud')->name('AjouterEtud');
 
 Route::get('/AfficherAbs','AbsenceController@AfficherAbs');
