@@ -14,8 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/inscription','EtudiantController@create');
-
-Route::post('/inscription', 'EtudiantController@store');
-
- Route::get('/Admin','AbsenceController@AfficherAbs');
