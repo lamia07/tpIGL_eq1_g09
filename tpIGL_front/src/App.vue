@@ -4,7 +4,7 @@
 
       <div class="container">
 
-        <Authent/>
+        <HelloWorld/>
       </div><!-- /.container -->
 
     </div>
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import Authent from './components/Authent.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
 
   components: {
-    Authent,
+    HelloWorld,
   },
 
   data: () => ({
