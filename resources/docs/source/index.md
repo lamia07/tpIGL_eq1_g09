@@ -23,6 +23,48 @@ Welcome to the generated API reference.
 #general
 
 
+<!-- START_906a2ebd7bc7b470f1a5c61b2c62c72d -->
+## api/AjouterEtud
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/AjouterEtud" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/AjouterEtud"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/AjouterEtud`
+
+
+<!-- END_906a2ebd7bc7b470f1a5c61b2c62c72d -->
+
 <!-- START_64ad2446c27f07087486fb2d3e43b696 -->
 ## api/AjouterEtud
 > Example request:

@@ -49,6 +49,37 @@
 <a href="http://localhost/docs/collection.json">Get Postman Collection</a></p>
 <!-- END_INFO -->
 <h1>general</h1>
+<!-- START_906a2ebd7bc7b470f1a5c61b2c62c72d -->
+<h2>api/AjouterEtud</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/AjouterEtud" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/AjouterEtud"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/AjouterEtud</code></p>
+<!-- END_906a2ebd7bc7b470f1a5c61b2c62c72d -->
 <!-- START_64ad2446c27f07087486fb2d3e43b696 -->
 <h2>api/AjouterEtud</h2>
 <blockquote>
