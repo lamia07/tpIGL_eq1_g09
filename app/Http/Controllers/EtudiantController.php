@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Etudiant;
+use Illuminate\Http\Request;
 
 class EtudiantController extends Controller
 {
@@ -12,6 +11,7 @@ class EtudiantController extends Controller
     return view ('inscription');
   }
   public function AjouterEtud(Request $request){
+
     $etud = \DB::table('etudiants')->where('matricule',request('matricule'))->first();
     if (is_null($etud)) {
       $etudiant = new Etudiant();
@@ -22,8 +22,9 @@ class EtudiantController extends Controller
       $etudiant->mdp=$request->input('nom') . $request->input('prenom');
       $etudiant->id_groupe=\DB::table('groupes')->where('nom_groupe',$request->input('nom_groupe'))->select('id')->get()->first()->id;
       $etudiant->save();
+      // return response()->json(['etat' => true],'id' => $etudiant->id);
+      return 'inscription reussite ';
 
-      return 'inscription faite avec succes';
     }
     else {
       return 'ce etudiant est deja inscrit ';
