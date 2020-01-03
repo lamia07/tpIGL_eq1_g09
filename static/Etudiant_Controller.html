@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <title>Introduction - My Project</title>
+    <title>Etudiant Controller - My Project</title>
     <meta name="description" content="My Stylish Documentation">
     <meta name="author" content="I, Me & Myself">
     <meta charset="UTF-8">
@@ -47,7 +47,7 @@
 
         <div class="Collapsible__content" id="sidebar_content">
             <!-- Navigation -->
-            <ul class='Nav'><li class='Nav__item Nav__item--active'><a href="Introduction.html">Introduction</a></li><li class='Nav__item '><a href="Etudiant_Controller.html">Etudiant Controller</a></li><li class='Nav__item '><a href="Absence_controller.html">Absence controller</a></li><li class='Nav__item '><a href="API_Calls.html">API Calls</a></li></ul>
+            <ul class='Nav'><li class='Nav__item '><a href="Introduction.html">Introduction</a></li><li class='Nav__item Nav__item--active'><a href="Etudiant_Controller.html">Etudiant Controller</a></li><li class='Nav__item '><a href="Absence_controller.html">Absence controller</a></li><li class='Nav__item '><a href="API_Calls.html">API Calls</a></li></ul>
 
             <div class="Links">
                             </div>
@@ -68,36 +68,37 @@
                 <article class="Page">
 
     <div class="Page__header">
-        <h1><a href="Introduction.html">Introduction</a></h1>
+        <h1><a href="Etudiant_Controller.html">Etudiant Controller</a></h1>
                     </div>
 
     <div class="s-content">
-        <h2 id="page_About">About</h2>
-<p><strong>Gesco</strong> est une application web de scolarité ciblant les étudiants, les enseignants et l’administration.</p>
-<p>Le code dépend de PHP 7.2.0 (Laravel), MySQL(phpMyAdmin), Vue.js(Frontend).</p>
-<h2 id="page_Requirements">Requirements</h2>
-<p>This project requires PHP &gt; <code>7.2.0</code> . A composer setup is recommened.</p>
-<h2 id="page_Installation">Installation</h2>
-<p>Pour installer composer aller au <a href="https://getcomposer.org/" class="Link--external">site oficiall</a>.</p>
-<p>Après avoir installé composer aller au <a href="https://laravel.com/docs/6.x" class="Link--external">site oficiel de laravel</a>pour installer laraval.</p>
-<h2 id="page_Database-setup">Database setup</h2>
+        <p>File located at : <code>app/Http/Controllers/EtudiantController.php</code></p>
 <ul>
-<li>Il faut d'abarod creer une base de données sous le nom <code>scolarite</code>.</li>
-<li>Après lancer la commende <code>php artisan migrate</code> et vous aurez votre base de données.</li>
+<li>Extends Controller.</li>
+<li>Contient la fonctionalité ajouter etudiants.</li>
+<li>utilise le modèle Etudiant.</li>
 </ul>
-<h2 id="page_Lancer-le-projet">Lancer le projet</h2>
-<ul>
-<li>Positionner dans le repertoire <code>/wamp64/www/tpigl</code> et lancer la commande <code>php artisan serve</code>.</li>
-<li>Positionner dans le repertoire <code>/wamp64/www/tpigl/tpigl_front</code> et lancer la commande <code>npm run serve</code>.</li>
-<li>ouvrir dans le navigateur <code>localhost:8080</code>.</li>
-</ul>
-<p>it will look like This</p>
-<p><img src="authent.png" alt="Info macro" /></p>
+<pre><code class="hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EtudiantController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span></span>{
+}
+</code></pre>
+<h2 id="page_Methods">Methods</h2>
+<p>_ _ AjouterEtud()</p>
+<pre><code class="hljs php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">AjouterEtud</span><span class="hljs-params">(Request $request)</span></span>{
+   <span class="hljs-keyword">if</span> () {
+       <span class="hljs-comment">/* si l'etudiant n'existe pas
+        recuperer las champs du formulaires
+        et ajouter l'etudiant au table etudiants*/</span>
+    }
+    <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">//ce etudiant est deja inscrit</span>
+    }
+  }
+</code></pre>
     </div>
 
         <nav>
         <ul class="Pager">
-                        <li class=Pager--next><a href="Etudiant_Controller.html">Next</a></li>        </ul>
+            <li class=Pager--prev><a href="Introduction.html">Previous</a></li>            <li class=Pager--next><a href="Absence_controller.html">Next</a></li>        </ul>
     </nav>
     </article>
 

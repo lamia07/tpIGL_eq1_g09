@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <title>Ajouter etudiant - My Project</title>
+    <title>Absence controller - My Project</title>
     <meta name="description" content="My Stylish Documentation">
     <meta name="author" content="I, Me & Myself">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="icon" href="themes/daux/img/favicon-blue.png" type="image/x-icon">
+    <link rel="icon" href="themes/daux/img/favicon-navy.png" type="image/x-icon">
 
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,7 +22,7 @@
     <!-- Font -->
     
     <!-- CSS -->
-    <link href='themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+    <link href='themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'>
             <!-- Search -->
         <link href="daux_libraries/search.css" rel="stylesheet">
     </head>
@@ -47,7 +47,7 @@
 
         <div class="Collapsible__content" id="sidebar_content">
             <!-- Navigation -->
-            <ul class='Nav'><li class='Nav__item '><a href="Introduction.html">Introduction</a></li><li class='Nav__item Nav__item--active'><a href="Ajouter_etudiant.html">Ajouter etudiant</a></li><li class='Nav__item '><a href="API_Calls.html">API Calls</a></li></ul>
+            <ul class='Nav'><li class='Nav__item '><a href="Introduction.html">Introduction</a></li><li class='Nav__item '><a href="Etudiant_Controller.html">Etudiant Controller</a></li><li class='Nav__item Nav__item--active'><a href="Absence_controller.html">Absence controller</a></li><li class='Nav__item '><a href="API_Calls.html">API Calls</a></li></ul>
 
             <div class="Links">
                             </div>
@@ -68,28 +68,33 @@
                 <article class="Page">
 
     <div class="Page__header">
-        <h1><a href="Ajouter_etudiant.html">Ajouter etudiant</a></h1>
+        <h1><a href="Absence_controller.html">Absence controller</a></h1>
                     </div>
 
     <div class="s-content">
-        <p>public function AjouterEtud(Request $request){
-$etud = \DB::table('etudiants')-&gt;where('matricule',request('matricule'))-&gt;first();
-if (is_null($etud)) {//etudiant n'existe pas
-......
-$etudiant-&gt;save();</p>
-<pre><code>    // return response()-&gt;json(['etat' =&gt; true],'id' =&gt; $etudiant-&gt;id);
-  }
-  else {
-    //ce etudiant est deja inscrit
-  }
+        <p>File located at : <code>app/Http/Controllers/AbsenceController.php</code></p>
+<ul>
+<li>Extends Controller.</li>
+<li>Contient la fonctionalité afficher .</li>
+<li>Utilise le modèle Absence.</li>
+</ul>
+<pre><code class="hljs php"> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbsenceController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span> </span>{
 
+ }
+</code></pre>
+<h2 id="page_Methods">Methods</h2>
+<p>_ _ AfficherAbs()</p>
+<pre><code class="hljs php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">AfficherAbs</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-comment">//select l'id d'absence, matricule, nom, groupe de l'etudiant absent ainsi que la seance.</span>
+  <span class="hljs-keyword">return</span> $abs;
 }
 </code></pre>
     </div>
 
         <nav>
         <ul class="Pager">
-            <li class=Pager--prev><a href="Introduction.html">Previous</a></li>            <li class=Pager--next><a href="API_Calls.html">Next</a></li>        </ul>
+            <li class=Pager--prev><a href="Etudiant_Controller.html">Previous</a></li>            <li class=Pager--next><a href="API_Calls.html">Next</a></li>        </ul>
     </nav>
     </article>
 

@@ -18,9 +18,5 @@ class AbsenceController extends Controller
     return $abs;
 
   }
-  // public function AfficherAbs()
-  // {
-  //   $listabsences = Absence::all();
-  //   return view ('interfaceAdmin',['abs'=>$listabsences]);
-  // }
+  
 }

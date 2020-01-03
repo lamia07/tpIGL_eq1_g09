@@ -22,7 +22,6 @@ class EtudiantController extends Controller
       $etudiant->mdp=$request->input('nom') . $request->input('prenom');
       $etudiant->id_groupe=\DB::table('groupes')->where('nom_groupe',$request->input('nom_groupe'))->select('id')->get()->first()->id;
       $etudiant->save();
-      // return response()->json(['etat' => true],'id' => $etudiant->id);
       return 'inscription reussite ';
 
     }
