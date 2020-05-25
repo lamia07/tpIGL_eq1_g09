@@ -29,6 +29,7 @@
       v-model="email"
       :rules="emailRules"
       label="E-mail"
+      name="input-10"
       required
     ></v-text-field>
     <v-text-field
@@ -46,9 +47,10 @@
     <v-select
       v-model="select"
       :items="items"
-      :rules="[v => !!v || 'Item is required']"
+      
       label="Occupation"
-      required
+      name="occup"
+
     ></v-select>
     <v-btn id="au"
       :disabled="!valid"
@@ -79,7 +81,7 @@
   </v-form>
   <div v-if="gh==='ok'">
     <Authent/>
-  </div> 
+  </div>
   </div>
 </template>
 <script>

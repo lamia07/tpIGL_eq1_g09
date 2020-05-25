@@ -5,12 +5,12 @@
      <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
           <v-toolbar-title class="text">GeSco</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn icon href="#one" 
+          <v-btn icon name="lien" href="#one"
           @click="method">
             <v-icon color="white">mdi-format-list-bulleted-square</v-icon>
           </v-btn>
-          
-          <v-btn icon href="#two" @click="method2">
+
+          <v-btn icon  href="#two" @click="method2">
             <v-icon color="white">mdi-account</v-icon>
           </v-btn>
           <v-btn icon href="#three">
@@ -33,14 +33,14 @@
   <div id="ajout" v-if="fc==='ok'">
   <ajout/>
   </div>
-  
+
 </div>
 </template>
 <script>
 import tab from "./Tab.vue"
 import ajout from "./Ajout.vue"
   export default {
-  
+
     components :{
       tab,
       ajout,
@@ -55,7 +55,7 @@ import ajout from "./Ajout.vue"
         { class: 'primary' },
         { class: 'elevation-0' },
       ],
-     
+
     }),
 
     methods: {
@@ -72,8 +72,8 @@ import ajout from "./Ajout.vue"
          else
          {this.fc = "false"}
        }
-    } 
-  } 
+    }
+  }
 </script>
 <style scoped>
 .text{
@@ -99,4 +99,3 @@ import ajout from "./Ajout.vue"
   opacity: 0.9;
 }
 </style>
-

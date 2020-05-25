@@ -18,7 +18,8 @@ class Affichage extends DuskTestCase
     //on ouvre 2 terminal un pour php artisan serve et l autre pour php artisan dusk
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/Admin')
+          //  $browser->visit('/Admin')
+          $browser->visit('/AfficherAbs')
             ->assertSee('Affichagedelalisteadmin')
             ->pause(1000);
         });
